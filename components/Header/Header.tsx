@@ -5,13 +5,14 @@ import Menu from "./Menu/Menu";
 export default function Header() {
   return (
     <header className="flex w-full justify-center items-center md:py-[64px] py-[32px] relative">
-      <nav className="max paddings flex justify-between items-center">
+      <nav className="max flex justify-between items-center margins">
         <Link href={"/"}>
           <Image
             src="/shared/desktop/logo-dark.png"
             width={202}
             height={27}
             alt="logo"
+            quality={100}
           />
         </Link>
 

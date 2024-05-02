@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   h1 {
-    @apply leading-[48px] font-medium text-[48px];
+    @apply sm:leading-[48px] font-medium sm:text-[48px] z-20 leading-[36px] text-[32px];
   }
   h2 {
-    @apply leading-[48px] font-medium text-[40px] tracking-[2px];
+    @apply xs:leading-[48px] font-medium xs:text-[40px] xs:tracking-[2px] z-20 text-[28px] leading-[36px] tracking-[1.4px];
   }
   h3 {
-    @apply leading-[26px] font-medium text-[20px] tracking-[5px];
+    @apply leading-[26px] font-medium text-[20px] tracking-[5px] z-20;
   }
   p {
-    @apply leading-[26px] font-normal text-[16px];
+    @apply sm:leading-[26px] font-normal sm:text-[16px] z-20 leading-[25px] text-[15px];
   }
 
   .max {
@@ -22,5 +23,9 @@
   
   .paddings {
     @apply  md:px-10 px-6
+  }
+
+  .margins {
+    @apply  md:mx-10 mx-6
   }
 }
