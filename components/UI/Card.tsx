@@ -29,7 +29,23 @@ export default function Card({ title, big, className }: props) {
         }
         fill
         quality={100}
-        className="absolute -z-10 object-cover rounded-[15px]"
+        className="absolute -z-10 object-cover rounded-[15px] md:inline-block hidden"
+        alt={`card of ${title}`}
+      />
+
+      <Image
+        src={`/home/tablet/${title}.jpg`}
+        fill
+        quality={100}
+        className="absolute -z-10 object-cover rounded-[15px] md:hidden xs:inline-block hidden"
+        alt={`card of ${title}`}
+      />
+
+      <Image
+        src={`/home/mobile/${title}.jpg`}
+        fill
+        quality={100}
+        className="absolute -z-10 object-cover rounded-[15px] xs:hidden inline-block"
         alt={`card of ${title}`}
       />
 
