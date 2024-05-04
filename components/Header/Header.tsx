@@ -16,7 +16,7 @@ export default function Header() {
           />
         </Link>
 
-        <ul className="gap-[42px] hidden md:flex leading-[14px] font-normal text-[14px] tracking-[2px];">
+        <ul className="gap-[42px] hidden md:flex leading-[14px] font-normal text-[14px] tracking-[2px] uppercase">
           <li>
             <Link
               href="/company"
