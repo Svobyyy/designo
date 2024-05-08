@@ -28,7 +28,7 @@ export default function Footer({ extra }: props) {
               src="/shared/desktop/bg-pattern-call-to-action.svg"
               alt="extra pattern"
               fill
-              className="object-none"
+              className="object-none rounded-[15px]"
             />
           </div>
         </section>

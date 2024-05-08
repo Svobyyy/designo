@@ -10,7 +10,7 @@ type props = {
 export default function Card({ title, big, className }: props) {
   return (
     <Link
-      href={""}
+      href={`${title}`}
       className={`
       ${className}
       md:max-w-[541px] max-w-full w-full relative text-white 
