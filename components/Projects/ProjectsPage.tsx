@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { projects, projectsType } from "@/constants";
 import Project from "../UI/Project";
+import Wrapper from "../UI/Wrapper";
+import Card from "../UI/Card";
 
 type props = {
   title: string;
@@ -39,6 +41,24 @@ export default function ProjectsPage({ title }: props) {
           );
         })}
       </div>
+
+      <Wrapper className="w-full xs:p-0 paddings">
+        <div
+          className="
+        grid md:grid-cols-2 grid-cols-1 gap-6 items-center justify-center
+        w-full max md:pt-[160px] pt-[120px]"
+        >
+          {title.replace("%20", "") !== "webdesign" && (
+            <Card title="web design" />
+          )}
+          {title.replace("%20", "") !== "appdesign" && (
+            <Card title="app design" />
+          )}
+          {title.replace("%20", "") !== "graphicdesign" && (
+            <Card title="graphic design" />
+          )}
+        </div>
+      </Wrapper>
     </section>
   );
 }
