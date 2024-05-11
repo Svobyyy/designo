@@ -153,7 +153,7 @@ export default function Company() {
           </p>
         </div>
         <Image
-          src="/about/desktop/image-world-class-talent.jpg"
+          src="/about/desktop/image-real-deal.jpg"
           width={476}
           height={713}
           className="rounded-tr-[15px] rounded-br-[15px] lg:w-[476px] md:w-[350px] md:inline-block hidden h-[713px] object-cover"
@@ -162,7 +162,7 @@ export default function Company() {
         />
 
         <Image
-          src="/about/tablet/image-world-class-talent.jpg"
+          src="/about/tablet/image-real-deal.jpg"
           width={689}
           height={320}
           className="rounded-tl-[15px] rounded-tr-[15px]  md:hidden object-cover order-first w-[719px] xs:inline-block hidden"
@@ -171,7 +171,7 @@ export default function Company() {
         />
 
         <Image
-          src="/about/mobile/image-world-class-talent.jpg"
+          src="/about/mobile/image-real-deal.jpg"
           width={480}
           height={320}
           className="object-cover order-first inline-block xs:hidden w-[500px] h-[320px]"
