@@ -107,6 +107,14 @@ export default function Company() {
           alt="aboutus image"
           quality={100}
         />
+
+        <Image
+          src="/shared/desktop/bg-pattern-three-circles.svg"
+          fill
+          alt="pattern"
+          className="rounded-[15px] absolute xs:translate-x-[80px] translate-x-[20px] md:translate-y-0 xs:translate-y-[50px] translate-y-[150px] z-40 object-contain"
+          quality={100}
+        />
       </div>
 
       <Wrapper className="w-full justify-center">
@@ -176,6 +184,14 @@ export default function Company() {
           height={320}
           className="object-cover order-first inline-block xs:hidden w-[500px] h-[320px]"
           alt="aboutus image"
+          quality={100}
+        />
+
+        <Image
+          src="/shared/desktop/bg-pattern-three-circles.svg"
+          fill
+          alt="pattern"
+          className="rounded-[15px] absolute xs:translate-x-[180px] translate-x-[20px] md:translate-y-0 xs:translate-y-[50px] translate-y-[150px] z-40 object-contain"
           quality={100}
         />
       </div>
