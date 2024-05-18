@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 type props = {
   rotate?: boolean;
@@ -21,7 +22,8 @@ export default function CardInfo({
   return (
     <div
       className={`md:max-w-[350px] flex ${
-        description && "md:flex-col xs:flex-row md:text-center xs:text-start xs:gap-8"
+        description &&
+        "md:flex-col xs:flex-row md:text-center xs:text-start xs:gap-8"
       } flex-col items-center justify-center text-center gap-[42px] md:gap-0`}
     >
       <div className="relative">
@@ -51,7 +53,11 @@ export default function CardInfo({
           {title}
         </h3>
         {description && <p>{description}</p>}
-        {button && <Button title="SEE LOCATION" />}
+        {button && (
+          <Link href="locations">
+            <Button title="SEE LOCATION" />{" "}
+          </Link>
+        )}
       </div>
     </div>
   );

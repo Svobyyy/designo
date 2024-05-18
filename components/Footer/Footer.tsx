@@ -8,7 +8,7 @@ type props = {
 
 export default function Footer({ extra }: props) {
   return (
-    <>
+    <section className="relative flex-1 flex flex-col justify-end">
       {extra && (
         <section className="flex justify-center items-center md:mt-[160px] xs:mt-0 mt-[-69px] margins text-white">
           <div className="flex md:flex-row flex-col md:justify-between justify-center items-center bg-peach md:px-[95px] px-5 max w-full md:h-[292px] md:py-0 xs:py-[57px] py-[64px] rounded-[15px] md:translate-y-[72px]  translate-y-[190px] md:gap-5  gap-8">
@@ -28,14 +28,14 @@ export default function Footer({ extra }: props) {
               src="/shared/desktop/bg-pattern-call-to-action.svg"
               alt="extra pattern"
               fill
-              className="object-none rounded-[15px]"
+              className="object-none rounded-[15px] z-[-1]"
             />
           </div>
         </section>
       )}
 
       <footer
-        className={`bg-black text-white flex items-center flex-col paddings ${
+        className={`bg-black text-white flex items-center flex-col paddings w-full ${
           !extra && "md:mt-[160px] mt-[120px]"
         }`}
       >
@@ -159,6 +159,6 @@ export default function Footer({ extra }: props) {
           </ul>
         </div>
       </footer>
-    </>
+    </section>
   );
 }
