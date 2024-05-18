@@ -32,13 +32,13 @@ export default function Menu() {
       />
 
       <ul
-        className={`gap-[32px] md:hidden flex-col flex transition-all uppercase w-full paddings z-30
+        className={`gap-[32px] md:hidden flex-col flex transition-all uppercase w-full paddings z-50
         ${
           !menu ? "opacity-0" : "opacity-100"
         } text-[24px] tracking-[2px] leading-[25px]
         absolute bottom-0 left-0 translate-y-[100%] bg-black text-white py-12`}
       >
-        <li>
+        <li onClick={() => setMenu(false)}>
           <Link
             href="/company"
             className="after:w-full after:h-[1px] after:bg-black after:inline-block after:opacity-0 
@@ -47,7 +47,7 @@ export default function Menu() {
             Our Company
           </Link>
         </li>
-        <li>
+        <li onClick={() => setMenu(false)}>
           <Link
             href="/locations"
             className="after:w-full after:h-[1px] after:bg-black after:inline-block after:opacity-0 
@@ -56,7 +56,7 @@ export default function Menu() {
             Locations
           </Link>
         </li>
-        <li>
+        <li onClick={() => setMenu(false)}>
           <Link
             href="/contact"
             className="after:w-full after:h-[1px] after:bg-black after:inline-block after:opacity-0 

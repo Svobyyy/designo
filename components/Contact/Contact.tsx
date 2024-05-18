@@ -52,7 +52,7 @@ export default function Contact() {
           />
           <textarea
             className="bg-transparent border-b border-white text-white font-medium leading-[26px] placeholder:text-white placeholder:opacity-50 pb-[11px]
-            outline-none focus:border-b-[3px] focus:placeholder:opacity-100 transition-all origin-bottom
+            outline-none focus:border-b-[3px] focus:placeholder:opacity-100 transition-all origin-bottom resize-none
             pl-4"
             placeholder="Your Message"
             required

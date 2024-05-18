@@ -3,6 +3,7 @@ import Wrapper from "@/components/UI/Wrapper";
 import Card from "../UI/Card";
 import CardInfo from "../UI/CardInfo";
 import Button from "../UI/Button";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -10,7 +11,7 @@ export default function HomePage() {
       <main className="flex items-center flex-col sm:margins">
         <section
           className="
-      max bg-peach md:h-[640px] h-[845px] rounded-[15px]
+      max bg-peach md:h-[640px] h-[845px] xs:rounded-[15px]
       flex flex-col md:justify-center justify-start md:items-start items-center md:text-start text-center
       md:gap-10 gap-5
       md:pl-[95px] sm:pt-[60px] pt-[80px] paddings
@@ -25,7 +26,9 @@ export default function HomePage() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <Button title={"LEARN MORE"} dark />
+          <Link href="company">
+            <Button title={"LEARN MORE"} dark />
+          </Link>
 
           <Image
             src={"/home/desktop/bg-pattern-hero-home.svg"}

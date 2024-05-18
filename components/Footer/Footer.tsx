@@ -22,7 +22,7 @@ export default function Footer({ extra }: props) {
               </p>
             </div>
 
-            <Button title="GET IN TOUCH" dark></Button>
+            <Link href="contact"><Button title="GET IN TOUCH" dark /></Link>
 
             <Image
               src="/shared/desktop/bg-pattern-call-to-action.svg"
