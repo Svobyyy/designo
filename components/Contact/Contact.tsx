@@ -67,7 +67,7 @@ export default function Contact() {
           src="/contact/desktop/bg-pattern-hero-desktop.svg"
           fill
           alt="pattern"
-          className="object-none overflow-visible rounded-[15px] absolute xs:inline-block hidden md:translate-x-[-250px] md:translate-y-[-70px] xs:translate-y-[-200px] xs:translate-x-[-100px] z-40"
+          className="object-none overflow-visible rounded-[15px] absolute xs:inline-block hidden md:translate-x-[-250px] md:translate-y-[0px] xs:translate-y-[-200px] xs:translate-x-[0px] z-40"
           quality={100}
         />
 
@@ -75,7 +75,7 @@ export default function Contact() {
           src="/contact/mobile/bg-pattern-hero-contact-mobile.svg"
           fill
           alt="pattern"
-          className="absolute inline-block xs:hidden object-cover translate-x-[25%] overflow-visible"
+          className="absolute inline-block xs:hidden object-cover overflow-visible"
           quality={100}
         />
       </div>

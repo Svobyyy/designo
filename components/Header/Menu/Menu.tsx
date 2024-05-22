@@ -32,7 +32,7 @@ export default function Menu() {
       />
 
       <ul
-        className={`gap-[32px] md:hidden flex-col flex transition-all uppercase w-full paddings z-50
+        className={`gap-[32px] md:hidden flex-col flex transition-all uppercase w-full paddings z-[1000]
         ${
           !menu ? "opacity-0" : "opacity-100"
         } text-[24px] tracking-[2px] leading-[25px]
