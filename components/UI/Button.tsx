@@ -8,7 +8,7 @@ export default function Button({ title, dark }: props) {
     <button
       className={`
       w-[152px] h-[56px] font-medium tracking-[1px] text-[15px] rounded-lg color-red 
-    hover:bg-peachLight hover:text-white transition-all z-20
+    hover:bg-peachLight hover:text-white transition-all z-[100]
     ${dark ? "text-greyDark bg-white" : "text-white bg-peach"} 
     `}
     >

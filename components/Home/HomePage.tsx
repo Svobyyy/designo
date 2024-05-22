@@ -26,7 +26,7 @@ export default function HomePage() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <Link href="company">
+          <Link href="company" className="z-[100]">
             <Button title={"LEARN MORE"} dark />
           </Link>
 
